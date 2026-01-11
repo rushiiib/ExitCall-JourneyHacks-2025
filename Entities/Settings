@@ -1,0 +1,45 @@
+{
+  "name": "Settings",
+  "type": "object",
+  "properties": {
+    "selectedCaller": {
+      "type": "string",
+      "enum": [
+        "Mom",
+        "Dad",
+        "Yamini"
+      ],
+      "default": "Mom",
+      "description": "Who will appear as the caller"
+    },
+    "delaySeconds": {
+      "type": "number",
+      "enum": [
+        2,
+        5,
+        10
+      ],
+      "default": 5,
+      "description": "Seconds before call starts"
+    },
+    "ringtone": {
+      "type": "string",
+      "enum": [
+        "Classic iPhone",
+        "Urgent",
+        "Vibration Only"
+      ],
+      "default": "Classic iPhone",
+      "description": "Ringtone style"
+    },
+    "customRingtoneUrl": {
+      "type": "string",
+      "description": "URL of uploaded custom ringtone"
+    }
+  },
+  "required": [
+    "selectedCaller",
+    "delaySeconds",
+    "ringtone"
+  ]
+}

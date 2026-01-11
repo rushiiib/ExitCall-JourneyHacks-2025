@@ -1,0 +1,34 @@
+{
+  "name": "Session",
+  "type": "object",
+  "properties": {
+    "startTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the session started"
+    },
+    "caller": {
+      "type": "string",
+      "description": "Name of the caller for this session"
+    },
+    "endedTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the session ended"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "idle",
+        "incoming",
+        "active",
+        "ended"
+      ],
+      "default": "idle",
+      "description": "Current status of the call session"
+    }
+  },
+  "required": [
+    "status"
+  ]
+}
