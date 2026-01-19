@@ -1,3 +1,7 @@
+## Attribution
+This project is based on an original repository developed during JourneyHacks 2026.  
+This fork highlights my individual contributions, including design decisions, prototyping, and front-end implementation.
+
 # ExitCall 📞
 
 A privacy-first emergency exit assist app
